@@ -1,10 +1,12 @@
 # app.py
 def login():
     username = "admin"
-    # ERREUR DE SÉCURITÉ : Ne jamais laisser de mot de passe dans le code !
     password = "superSecretPassword123!" 
     
-    print(f"Connexion de {username} avec le mot de passe {password}")
+    # AJOUTE CETTE LIGNE CI-DESSOUS :
+    aws_key = "AKIAIMNOVALIDKEY1234" 
+    
+    print(f"Connexion de {username}")
 
 if __name__ == "__main__":
     login()
