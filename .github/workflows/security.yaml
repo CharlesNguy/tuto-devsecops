@@ -16,3 +16,8 @@ jobs:
 
       - name: Test basique
         run: python app.py
+
+      - name: Scan de secret avec Gitleaks
+        uses : gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
